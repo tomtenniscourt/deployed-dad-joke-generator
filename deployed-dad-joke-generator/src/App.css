@@ -1,38 +1,101 @@
-.App {
+.button-highlight {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+.joke-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffcc00;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Ysabeau Office', sans-serif;
+  font-size: 25px;
+}
+
+.joke-button:hover {
+  transform: scale(1.1);
+  background-color: #ffcc0099;
+}
+
+.joke-container {
+  margin-top: 20px;
+  margin-left: 280px;
+  margin-right: 280px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.joke-text {
+  margin: 0;
+  font-size: 30px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@300;600;800&display=swap');
+
+
+.joke-page-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+
+h1 {
+  font-family: 'Ysabeau Office', sans-serif;
+  font-size: 75px;
+  color: #333333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h2 {
+  font-family: 'Ysabeau Office', sans-serif;
+  font-size: 50px;
+  color: #333333;
+}
+
+p {
+  font-family: 'Ysabeau Office', sans-serif;
+  font-size: 25px;
+  color: #444444;
+}
+
+
+
+
+.dad-joke-generator-home {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 50px;
+  padding-top: 20px;
+  background-color: lightcyan;
+}
+
+/* GRADIENT BACKGROUND */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 45s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  50% {
+    background-position: 100% 50%;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    background-position: 0% 50%;
   }
 }
